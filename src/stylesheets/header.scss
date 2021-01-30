@@ -1,22 +1,33 @@
-header {
+.header {
   background-color: #999;
+  height: 3vh;
+  min-height: 22px;
+  display: flex;
+  justify-content: center;
 
-  .menu {
-    padding: 0;
+  .nav {
     margin: 0;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 
-    .menu-item {
-      list-style: none;
-      padding: 10px 20px;
+    .menu {
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-      a {
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+      .menu-item {
+        list-style: none;
+        padding: 10px 20px;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
       }
     }
   }

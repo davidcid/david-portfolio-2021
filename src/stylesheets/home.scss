@@ -1,0 +1,43 @@
+.home {
+  background-color: firebrick;
+  height: 97vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .home-container {
+    max-width: 700px;
+  }
+
+  .home-title {
+    margin: 0;
+    font-size: 90px;
+    font-size: 700;
+  }
+
+  .home-paragraph {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .home-line {
+    width: 80%;
+    border-color: rgba(150, 150, 150, 0.15);
+  }
+
+  .home-social {
+    display: flex;
+    justify-content: center;
+
+    .home-social-element {
+      list-style: none;
+      margin: 10px 15px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
