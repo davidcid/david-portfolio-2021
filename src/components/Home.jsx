@@ -9,7 +9,7 @@ const Home = () => {
         <div className="home" id="home">
             <div className="container home-container">
                 <h1 className="home-title">Soy David Cid.</h1>
-                <p className="home-paragraph">Soy Desarrollador Frontend. Disfruto diseñando y construyendo webs donde la experiencia de usuario esté presente desde el primer momento. Me gusta aprender nuevas tecnologías, escribir artículos técnicos o simplemente jugar videojuego con mis amigos en mi tiempo libre.</p>
+                <p className="home-paragraph">Soy Desarrollador Frontend. Disfruto diseñando y construyendo webs donde la experiencia de usuario esté presente desde el primer momento. Me gusta aprender nuevas tecnologías, escribir artículos técnicos o simplemente jugar videojuegos en mi tiempo libre.</p>
                 <hr className="home-line"/>
                 
                 {/* <FontAwesomeIcon icon={['fas', 'code']} />  */}
