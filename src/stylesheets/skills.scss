@@ -1,0 +1,41 @@
+@import "config";
+
+.skills {
+  background-color: $primary-color;
+  font-size: 1.3rem;
+  color: white;
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+
+    .technologies,
+    .tools {
+      margin: 1rem 3rem;
+
+      h2 {
+        margin-top: 0;
+      }
+
+      .skills-list {
+        text-align: left;
+        list-style: none;
+        line-height: 2.4rem;
+        margin-left: 1rem;
+        margin-bottom: 0;
+
+        .skills-element {
+          display: flex;
+          align-items: center;
+
+          p {
+            margin: 0;
+            margin-left: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

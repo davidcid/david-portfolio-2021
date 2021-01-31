@@ -1,34 +1,53 @@
+@import "config";
+
 .about {
-  background-color: #2b2b2b;
+  background-color: $secondary-color;
 
   .about-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
 
     .about-image {
       object-fit: contain;
-      margin-top: 4rem;
-      margin-right: 3rem;
+      margin-bottom: 2rem;
     }
 
     .about-text {
       color: white;
       //   margin: 40px;
-      text-align: left;
+      text-align: center;
       //   max-width: 500px;
-      border-left: 4px solid firebrick;
-      padding-left: 3rem;
 
       h2 {
-        margin-top: 4rem;
+        margin-top: 0;
         font-size: 1.9em;
       }
 
       p {
-        color: #7a7a7a;
+        color: #a1a1a1;
         font-size: 1rem;
         line-height: 1.8rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .about-container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+
+      .about-image {
+        object-fit: contain;
+        margin-right: 3rem;
+      }
+
+      .about-text {
+        border-left: 3px solid $primary-color;
+        padding-left: 1rem;
+        text-align: left;
       }
     }
   }
