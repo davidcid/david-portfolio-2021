@@ -1,0 +1,36 @@
+@import "config";
+
+.project {
+  max-width: 900px;
+  // margin: 3rem 1rem;
+  margin: 0 auto;
+
+  .carousel {
+    border-radius: 5px;
+    .project-carousel-div {
+      display: flex;
+
+      .legend {
+        bottom: -40%;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.7s ease;
+        background-color: $secondary-color;
+
+        .legend-title {
+          color: $primary-color;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .project-carousel-div {
+      .legend {
+        opacity: 90%;
+        bottom: 5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import "config";
+
+.projects {
+  background-color: $secondary-color;
+  color: white;
+
+  .projects-title {
+    margin: 0;
+    padding: 4rem 1rem;
+  }
+}
