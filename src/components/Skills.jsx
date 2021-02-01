@@ -1,8 +1,8 @@
 import "../stylesheets/skills.scss";
 import { AiFillHtml5 } from 'react-icons/ai';
-import { FaReact, FaGitAlt, FaNodeJs, FaBitbucket, FaGithub, FaNpm, FaSlack, FaJira, FaFigma, FaTrello } from 'react-icons/fa';
+import { FaReact, FaGitAlt, FaNodeJs, FaBitbucket, FaGithub, FaNpm, FaSlack, FaJira, FaFigma, FaTrello, FaAngular } from 'react-icons/fa';
 import { DiCss3, DiSass, DiPhotoshop, DiIllustrator } from 'react-icons/di';
-import { SiJavascript, SiTypescript } from 'react-icons/si';
+import { SiJavascript, SiTypescript, SiVisualstudio } from 'react-icons/si';
 import { IoLogoVue } from 'react-icons/io5';
 
 const Skills = () => {
@@ -18,6 +18,7 @@ const Skills = () => {
                         <li className="skills-element"><SiJavascript /><p>JavaScript</p></li>
                         <li className="skills-element"><FaReact /><p>React</p></li>
                         <li className="skills-element"><IoLogoVue /><p>Vue</p></li>
+                        <li className="skills-element"><FaAngular /><p>Angular</p></li>
                         <li className="skills-element"><FaGitAlt /><p>Git</p></li>
                         <li className="skills-element"><SiTypescript /><p>TypeScript</p></li>
                         <li className="skills-element"><FaNodeJs /><p>Node</p></li>
@@ -30,6 +31,7 @@ const Skills = () => {
                         <li className="skills-element"><FaBitbucket /><p>Bitbucket</p></li>
                         <li className="skills-element"><FaNpm /><p>NPM</p></li>
                         <li className="skills-element"><FaJira /><p>Jira</p></li>
+                        <li className="skills-element"><SiVisualstudio /><p>VS Code</p></li>
                         <li className="skills-element"><FaFigma /><p>Figma</p></li>
                         <li className="skills-element"><DiPhotoshop /><p>Photoshop</p></li>
                         <li className="skills-element"><DiIllustrator /><p>Illustrator</p></li>
