@@ -3,10 +3,12 @@
 .project {
   max-width: 900px;
   // margin: 3rem 1rem;
-  margin: 0 auto;
+  //   margin: 0 auto;
+  margin: 2rem 1rem;
 
   .carousel {
     border-radius: 5px;
+
     .project-carousel-div {
       display: flex;
 
@@ -21,6 +23,12 @@
           color: $primary-color;
           text-transform: uppercase;
         }
+
+        .legend-link {
+          text-decoration: none;
+          font-size: 1.2rem;
+          color: white;
+        }
       }
     }
   }
@@ -28,7 +36,7 @@
   &:hover {
     .project-carousel-div {
       .legend {
-        opacity: 90%;
+        opacity: 95%;
         bottom: 5%;
       }
     }

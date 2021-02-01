@@ -2,12 +2,13 @@
 
 .header {
   background-color: $secondary-color;
-  min-height: 22px;
+  min-height: 2rem;
   position: fixed;
   width: 100%;
   // display: flex;
   justify-content: center;
   display: none;
+  z-index: 9999;
 
   .nav {
     margin: 0;

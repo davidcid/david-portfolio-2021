@@ -14,8 +14,11 @@ import careexpandLanding from "../assets/images/careexpand/landing.jpg";
 import careexpandCareCoordination from "../assets/images/careexpand/care_coordination.jpg";
 import careexpandAdminDashboard from "../assets/images/careexpand/admin_dashboard.jpg";
 import careexpandTelemedicine from "../assets/images/careexpand/telemedicine.jpg";
-import careexpandGurucare from "../assets/images/careexpand/gurucare.jpg";
 
+// imagenees sonospine
+import sonospineLanding from "../assets/images/sonospine/landing.jpg";
+import sonospineTreatment from "../assets/images/sonospine/treatment.jpg";
+import sonospineStories from "../assets/images/sonospine/stories.jpg";
 
 import { BiLink } from 'react-icons/bi';
 
@@ -66,9 +69,25 @@ const projects = [
                 image: careexpandTelemedicine,
                 alt: "Pagina de telemedicina de Careexpand"
             },
+        ]
+    },
+    {
+        name: "sonospine",
+        title: "Sonospine",
+        description: "Colaboré en el mantenimiento de la parte privada de esta web construida con Angular y TypeScript. La herramienta se utiliza para hacer seguimiento a pacientes con afecciones de espalda",
+        url: "https://www.sonospine.com",
+        images: 
+            [{
+                image: sonospineLanding,
+                alt: "Sonospine landing page"
+            }, 
             {
-                image: careexpandGurucare,
-                alt: "Pantalla de citas de Careexpand"
+                image: sonospineTreatment,
+                alt: "Sonospine treatment page"
+            },
+            {
+                image: sonospineStories,
+                alt: "Sonospine stories page"
             },
         ]
     },
@@ -84,7 +103,7 @@ const Project = ({ project }) => {
                 showArrows
                 showStatus={false}
                 autoPlay
-                interval={3500}
+                interval={4500}
                 infiniteLoop={true}
                 showThumbs={false}
                 className="project-carousel"
@@ -97,7 +116,7 @@ const Project = ({ project }) => {
                                 <div className="legend">
                                     <h2 className="legend-title">{selectedProject.title}</h2>
                                     <p className="legend-text">{selectedProject.description}</p>
-                                    < BiLink />
+                                    <a className="legend-link" href={selectedProject.url}><BiLink /></a>
                                 </div>
                             </div>
                         )
