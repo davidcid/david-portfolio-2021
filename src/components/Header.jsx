@@ -42,15 +42,6 @@ const Header = () => {
                     >
                         Proyectos
                     </Link>
-                    <Link 
-                        className="menu-item" 
-                        activeClass="active" 
-                        to="contact" 
-                        spy={true} 
-                        smooth={true}
-                    >
-                        Contacto
-                    </Link>
                 </ul>
             </nav>
         </header>
