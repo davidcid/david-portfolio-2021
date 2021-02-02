@@ -1,6 +1,54 @@
 @import "config";
 
 .footer {
-  background-color: $primary-color;
-  padding: 3rem 1rem;
+  background-color: $light-color;
+  padding: 2rem 0.5rem;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+
+      .footer-social-element {
+        list-style: none;
+        margin: 0 0.5rem;
+        transition: all 0.4s ease;
+        font-size: 1.4rem;
+
+        a {
+          color: $dark-font;
+        }
+
+        &:hover {
+          transform: translateY(-0.5rem);
+        }
+      }
+    }
+
+    .footer-p {
+      color: $dark-font;
+      font-size: 0.75rem;
+      margin: 0 1rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      justify-content: space-between;
+
+      .footer-social {
+        margin-bottom: 0;
+      }
+
+      .footer-p {
+        font-size: 1rem;
+      }
+    }
+  }
 }

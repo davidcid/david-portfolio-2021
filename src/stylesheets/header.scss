@@ -1,7 +1,7 @@
 @import "config";
 
 .header {
-  background-color: $secondary-color;
+  background-color: $dark-color;
   min-height: 4rem;
   position: fixed;
   width: 100%;
@@ -27,7 +27,7 @@
         list-style: none;
         padding: 10px 20px;
         text-decoration: none;
-        color: white;
+        color: $light-font;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -35,7 +35,6 @@
         transition: all 0.4s ease;
 
         &.active {
-          // color: $primary-color;
           font-size: 1.7rem;
         }
 

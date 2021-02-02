@@ -1,7 +1,7 @@
 @import "config";
 
 .about {
-  background-color: $secondary-color;
+  background-color: $dark-color;
 
   .about-container {
     display: flex;
@@ -15,7 +15,7 @@
     }
 
     .about-text {
-      color: white;
+      color: $light-font;
       text-align: center;
 
       .about-text-title {
@@ -28,7 +28,7 @@
       }
 
       p {
-        color: #a1a1a1;
+        color: $light-font;
         font-size: 1rem;
         line-height: 1.8rem;
       }
@@ -47,7 +47,7 @@
       }
 
       .about-text {
-        border-left: 3px solid $primary-color;
+        border-left: 3px solid $highlight-color;
         padding-left: 1rem;
         text-align: left;
       }

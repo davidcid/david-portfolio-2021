@@ -1,13 +1,13 @@
 @import "config";
 
 .home {
-  background-color: $primary-color;
+  background-color: $light-color;
   height: 100vh;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: $dark-color;
 
   .home-container {
     max-width: 700px;
@@ -22,6 +22,7 @@
   .home-paragraph {
     font-size: 18px;
     line-height: 34px;
+    color: $dark-font;
   }
 
   .home-line {
@@ -40,7 +41,7 @@
       font-size: 2rem;
 
       a {
-        color: white;
+        color: $highlight-color;
       }
 
       &:hover {
