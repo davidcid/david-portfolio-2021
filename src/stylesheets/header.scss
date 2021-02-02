@@ -2,7 +2,7 @@
 
 .header {
   background-color: $secondary-color;
-  min-height: 2rem;
+  min-height: 4rem;
   position: fixed;
   width: 100%;
   // display: flex;
@@ -26,13 +26,21 @@
       .menu-item {
         list-style: none;
         padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.4s ease;
 
-        a {
-          text-decoration: none;
-          color: white;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 2px;
+        &.active {
+          // color: $primary-color;
+          font-size: 1.7rem;
+        }
+
+        &:hover {
+          color: #a1a1a1;
         }
       }
     }

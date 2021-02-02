@@ -1,15 +1,56 @@
 import '../stylesheets/header.scss';
+import { Link } from 'react-scroll';
 
 const Header = () => {
     return (
         <header className="header">
             <nav className="nav">
                 <ul className="menu">
-                    <li className="menu-item"><a href="#home">Inicio</a></li>
-                    <li className="menu-item"><a href="#about">Sobre mí</a></li>
-                    <li className="menu-item"><a href="#skills">Skills</a></li>
-                    <li className="menu-item"><a href="#projects">Proyectos</a></li>
-                    <li className="menu-item"><a href="#contact">Contacto</a></li>
+                    <Link 
+                        className="menu-item" 
+                        activeClass="active" 
+                        to="home" 
+                        spy={true} 
+                        smooth={true}
+                    >
+                        Inicio
+                    </Link>
+                    <Link 
+                        className="menu-item" 
+                        activeClass="active" 
+                        to="about" 
+                        spy={true} 
+                        smooth={true}
+                    >
+                        Sobre mí
+                    </Link>
+                    <Link 
+                        className="menu-item" 
+                        activeClass="active" 
+                        to="skills" 
+                        spy={true} 
+                        smooth={true}
+                    >
+                        Skills
+                    </Link>
+                    <Link 
+                        className="menu-item" 
+                        activeClass="active" 
+                        to="projects" 
+                        spy={true} 
+                        smooth={true}
+                    >
+                        Proyectos
+                    </Link>
+                    <Link 
+                        className="menu-item" 
+                        activeClass="active" 
+                        to="contact" 
+                        spy={true} 
+                        smooth={true}
+                    >
+                        Contacto
+                    </Link>
                 </ul>
             </nav>
         </header>
