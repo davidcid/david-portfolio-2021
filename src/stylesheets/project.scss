@@ -6,6 +6,12 @@
   //   margin: 0 auto;
   margin: 2rem 1rem;
 
+  .project-title {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 0.4rem;
+  }
+
   .carousel {
     border-radius: 5px;
 
@@ -20,14 +26,58 @@
         background-color: $secondary-color;
 
         .legend-title {
-          color: $primary-color;
           text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          margin-bottom: 0;
+
+          .legend-link {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: white;
+            margin-left: 0.7rem;
+          }
         }
 
-        .legend-link {
-          text-decoration: none;
-          font-size: 1.2rem;
-          color: white;
+        .legend-text {
+          margin-top: 0;
+        }
+
+        .legend-techs {
+          display: flex;
+          justify-content: center;
+
+          .legend-tech {
+            margin: 0 0.4rem;
+            list-style: none;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .legend {
+          padding: 1.3rem;
+
+          .legend-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            .legend-link {
+              font-size: 2rem;
+            }
+          }
+
+          .legend-text {
+            font-size: 1rem;
+            color: #a1a1a1;
+          }
+
+          .legend-techs {
+            .legend-tech {
+              font-size: 2rem;
+              margin-bottom: 1rem;
+            }
+          }
         }
       }
     }

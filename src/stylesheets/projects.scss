@@ -3,12 +3,21 @@
 .projects {
   background-color: $secondary-color;
   color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  .projects-title {
-    margin: 0;
-    padding: 4rem 1rem 1rem 1rem;
+  .container {
+    padding: 3rem 0;
+
+    .projects-title {
+      text-align: left;
+      font-size: 2rem;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

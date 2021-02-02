@@ -15,10 +15,15 @@ import careexpandCareCoordination from "../assets/images/careexpand/care_coordin
 import careexpandAdminDashboard from "../assets/images/careexpand/admin_dashboard.jpg";
 import careexpandTelemedicine from "../assets/images/careexpand/telemedicine.jpg";
 
-// imagenees sonospine
+// imagenes sonospine
 import sonospineLanding from "../assets/images/sonospine/landing.jpg";
 import sonospineTreatment from "../assets/images/sonospine/treatment.jpg";
 import sonospineStories from "../assets/images/sonospine/stories.jpg";
+
+// iconos tecnologias
+import { FaReact, FaNodeJs, FaAngular } from 'react-icons/fa';
+import { SiJavascript, SiMysql, SiTwilio, SiTypescript } from 'react-icons/si';
+
 
 import { BiLink } from 'react-icons/bi';
 
@@ -29,7 +34,7 @@ const projects = [
         title: "Amphosfarmacia",
         description: "Projecto que creé desde cero utilizando React.js en el front y Node.js para el backend. Utilizado por profesionales de la salud para compartir sus experiencias con el COVID-19 y comunicarse con otros profesionales.",
         url: "https://www.amphosfarmacia.com",
-        images: 
+        images:
             [{
                 image: amphosfarmaciaLanding,
                 alt: "Amphosfarmacia landing page"
@@ -45,7 +50,13 @@ const projects = [
             {
                 image: amphosfarmaciaVerify,
                 alt: "Amphosfarmacia verificacion de perfiles"
-            }]
+            }],
+        technologies:
+            [
+                <FaReact />,
+                <FaNodeJs />,
+                <SiMysql />
+            ]
     },
     {
         name: "careexpand",
@@ -69,13 +80,21 @@ const projects = [
                 image: careexpandTelemedicine,
                 alt: "Pagina de telemedicina de Careexpand"
             },
+        ],
+        technologies:
+        [
+            <SiJavascript />,
+            <FaReact />,
+            <FaNodeJs />,
+            <SiTwilio />,
+            <SiMysql />
         ]
     },
     {
         name: "sonospine",
         title: "Sonospine",
-        description: "Colaboré en el mantenimiento de la parte privada de esta web construida con Angular y TypeScript. La herramienta se utiliza para hacer seguimiento a pacientes con afecciones de espalda",
-        url: "https://www.sonospine.com",
+        description: "Colaboré en el mantenimiento de la parte privada de esta herramienta utilizada para hacer seguimiento a pacientes con afecciones de espalda.",
+        url: "https://sonospinesurgery.com/",
         images: 
             [{
                 image: sonospineLanding,
@@ -89,6 +108,11 @@ const projects = [
                 image: sonospineStories,
                 alt: "Sonospine stories page"
             },
+        ],
+        technologies:
+        [
+            <FaAngular />,
+            <SiTypescript />
         ]
     },
 ];
@@ -99,6 +123,7 @@ const Project = ({ project }) => {
 
     return ( 
         <div className="project">
+            <h2 className="project-title">{selectedProject.title}</h2>
             <Carousel
                 showArrows
                 showStatus={false}
@@ -114,9 +139,27 @@ const Project = ({ project }) => {
                             <div className="project-carousel-div">
                                 <img src={image.image} alt={image.alt}/>
                                 <div className="legend">
-                                    <h2 className="legend-title">{selectedProject.title}</h2>
+                                    <h3 className="legend-title">
+                                        {selectedProject.title}
+                                        <a 
+                                            className="legend-link" 
+                                            href={selectedProject.url}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <BiLink />
+                                        </a>
+                                    </h3>
                                     <p className="legend-text">{selectedProject.description}</p>
-                                    <a className="legend-link" href={selectedProject.url}><BiLink /></a>
+                                    <ul className="legend-techs">
+                                    {
+                                        selectedProject.technologies.map(tech => 
+                                            (
+                                                <li className="legend-tech">{tech}</li>
+                                            )
+                                        )
+                                    }
+                                    </ul>
                                 </div>
                             </div>
                         )

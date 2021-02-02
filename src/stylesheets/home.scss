@@ -36,9 +36,14 @@
     .home-social-element {
       list-style: none;
       margin: 10px 15px;
+      transition: all 0.4s ease;
 
       a {
         color: white;
+      }
+
+      &:hover {
+        transform: translateY(-0.5rem);
       }
     }
   }

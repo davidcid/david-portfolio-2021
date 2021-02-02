@@ -20,7 +20,7 @@ const Home = () => {
                         }} 
                     ></TypeIt>
                 </h1>
-                <p className="home-paragraph">Soy Desarrollador Frontend. Disfruto diseñando y construyendo webs donde la experiencia de usuario esté presente desde el primer momento. Me gusta aprender nuevas tecnologías, escribir artículos técnicos o simplemente jugar videojuegos en mi tiempo libre.</p>
+                <p className="home-paragraph">Y soy Desarrollador Frontend. Disfruto diseñando y construyendo webs donde la experiencia de usuario esté presente desde el primer momento. Me gusta aprender nuevas tecnologías, escribir artículos técnicos o simplemente jugar videojuegos en mi tiempo libre.</p>
                 <hr className="home-line"/>
                 
                 <ul className="home-social">

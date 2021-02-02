@@ -2,7 +2,7 @@
 
 .skills {
   background-color: $primary-color;
-  font-size: 1.3rem;
+  // font-size: 1.3rem;
   color: white;
 
   .container {
@@ -17,6 +17,7 @@
 
       h2 {
         margin-top: 0;
+        font-size: 2rem;
       }
 
       .skills-list {
@@ -25,14 +26,18 @@
         line-height: 2.4rem;
         margin-left: 2rem;
         margin-bottom: 0;
+        min-width: 200px;
 
         .skills-element {
           display: flex;
           align-items: center;
+          font-size: 1.5rem;
+          line-height: 3rem;
 
           p {
             margin: 0;
             margin-left: 0.8rem;
+            font-size: 1.2rem;
           }
         }
       }
