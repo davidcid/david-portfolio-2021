@@ -2,10 +2,10 @@
 
 .skills {
   background-color: $light-color;
-  // font-size: 1.3rem;
   color: $dark-font;
+  position: relative;
 
-  .container {
+  .skills-container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
