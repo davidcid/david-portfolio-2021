@@ -90,7 +90,7 @@
     }
   }
 
-  &:hover {
+  .carousel:hover {
     .project-carousel-div {
       .legend {
         opacity: 95%;
@@ -98,4 +98,13 @@
       }
     }
   }
+
+  // &:hover {
+  //   .project-carousel-div {
+  //     .legend {
+  //       opacity: 95%;
+  //       bottom: 5%;
+  //     }
+  //   }
+  // }
 }
