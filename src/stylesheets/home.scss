@@ -29,7 +29,8 @@
 
   .home-line {
     width: 80%;
-    border-color: rgba(150, 150, 150, 0.15);
+    border-color: $dark-font;
+    opacity: 0.2;
   }
 
   .home-social {
