@@ -123,7 +123,7 @@ const Project = ({ project }) => {
 
     return ( 
         <div className="project">
-            <h2 className="project-title">{selectedProject.title}</h2>
+            {/* <h2 className="project-title">{selectedProject.title}</h2> */}
             <Carousel
                 showArrows
                 showStatus={false}

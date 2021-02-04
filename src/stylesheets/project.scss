@@ -2,8 +2,6 @@
 
 .project {
   max-width: 900px;
-  // margin: 3rem 1rem;
-  //   margin: 0 auto;
   margin: 2rem 1rem;
 
   .project-title {
@@ -19,34 +17,50 @@
       display: flex;
 
       .legend {
-        bottom: -40%;
-        opacity: 0;
+        bottom: -58%;
+        opacity: 95%;
         overflow: hidden;
         transition: 0.7s ease;
-        // background-color: $dark-font;
         background: $dark-font;
         background: linear-gradient(0deg, $dark-font -50%, $dark-color 100%);
         color: $light-font;
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        height: 80%;
+
+        @media screen and (min-width: 768px) {
+          height: 40%;
+          bottom: -30%;
+
+          .legend-text {
+            font-size: 1rem;
+            color: $light-font;
+          }
+        }
 
         .legend-title {
           text-transform: uppercase;
           display: flex;
           justify-content: center;
-          margin-bottom: 0;
           color: white;
           text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+          margin: 0;
+          padding-bottom: 0.2rem;
+
+          @media screen and (min-width: 768px) {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
 
           .legend-link {
             text-decoration: none;
             font-size: 1.2rem;
             color: $light-font;
             margin-left: 0.7rem;
-          }
-        }
 
-        .legend-text {
-          margin-top: 0;
+            @media screen and (min-width: 768px) {
+              font-size: 2rem;
+            }
+          }
         }
 
         .legend-techs {
@@ -58,29 +72,8 @@
             margin: 0 0.4rem;
             list-style: none;
             font-size: 1.2rem;
-          }
-        }
-      }
 
-      @media screen and (min-width: 768px) {
-        .legend {
-          padding: 1.3rem;
-
-          .legend-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            .legend-link {
-              font-size: 2rem;
-            }
-          }
-
-          .legend-text {
-            font-size: 1rem;
-            color: $light-font;
-          }
-
-          .legend-techs {
-            .legend-tech {
+            @media screen and (min-width: 768px) {
               font-size: 2rem;
               margin-bottom: 1rem;
             }
@@ -90,21 +83,16 @@
     }
   }
 
-  .carousel:hover {
+  &:hover {
     .project-carousel-div {
       .legend {
-        opacity: 95%;
-        bottom: 5%;
+        // opacity: 95%;
+        bottom: 10%;
+
+        @media screen and (min-width: 768px) {
+          bottom: 5%;
+        }
       }
     }
   }
-
-  // &:hover {
-  //   .project-carousel-div {
-  //     .legend {
-  //       opacity: 95%;
-  //       bottom: 5%;
-  //     }
-  //   }
-  // }
 }
