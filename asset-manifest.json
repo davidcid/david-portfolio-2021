@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c801705.chunk.css",
+    "main.css": "/static/css/main.96676092.chunk.css",
     "main.js": "/static/js/main.6139215c.chunk.js",
     "main.js.map": "/static/js/main.6139215c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8299e5a.js",
@@ -10,7 +10,7 @@
     "static/js/2.e1bba5e0.chunk.js.map": "/static/js/2.e1bba5e0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.55d8add8.chunk.css.map": "/static/css/2.55d8add8.chunk.css.map",
-    "static/css/main.7c801705.chunk.css.map": "/static/css/main.7c801705.chunk.css.map",
+    "static/css/main.96676092.chunk.css.map": "/static/css/main.96676092.chunk.css.map",
     "static/js/2.e1bba5e0.chunk.js.LICENSE.txt": "/static/js/2.e1bba5e0.chunk.js.LICENSE.txt",
     "static/media/admin_dashboard.3e031fcc.jpg": "/static/media/admin_dashboard.3e031fcc.jpg",
     "static/media/amphosfarmacia.acd909d7.jpg": "/static/media/amphosfarmacia.acd909d7.jpg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.c8299e5a.js",
     "static/css/2.55d8add8.chunk.css",
     "static/js/2.e1bba5e0.chunk.js",
-    "static/css/main.7c801705.chunk.css",
+    "static/css/main.96676092.chunk.css",
     "static/js/main.6139215c.chunk.js"
   ]
 }
