@@ -1,18 +1,68 @@
 @import "config";
 
 .header {
-  background-color: $dark-color;
-  min-height: 4rem;
   position: fixed;
   width: 100%;
-  // display: flex;
-  justify-content: center;
-  display: none;
-  z-index: 9999;
+  z-index: 1000;
+
+  .menu-btn {
+    z-index: 2000;
+    color: white;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+
+    .btn-line {
+      width: 28px;
+      height: 3px;
+      margin: 0 0 5px 0;
+      background: white;
+      transition: all 0.5s ease-out;
+    }
+
+    // Rotate Into x With Menu Lines
+    &.close {
+      transform: rotate(180deg);
+
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(7px, -6px);
+        }
+      }
+    }
+  }
 
   .nav {
+    display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
+    background-color: $dark-color;
+    min-height: 4rem;
+    position: absolute;
+    width: 100%;
+    top: -148px;
+    transition: all 0.4s ease;
+
+    &.active {
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+      top: 0;
+    }
 
     .menu {
       height: 100%;
@@ -33,10 +83,6 @@
         letter-spacing: 2px;
         cursor: pointer;
         transition: all 0.4s ease;
-
-        &.active {
-          font-size: 1.7rem;
-        }
       }
     }
   }
@@ -45,9 +91,20 @@
     height: 3vh;
     display: flex;
 
+    .menu-btn {
+      display: none;
+    }
+
     .nav {
+      top: 0;
       .menu {
         flex-direction: row;
+
+        .menu-item {
+          &.active {
+            font-size: 1.7rem;
+          }
+        }
       }
     }
   }

@@ -16,10 +16,12 @@ import {
 import { DiCss3, DiSass, DiPhotoshop, DiIllustrator } from "react-icons/di";
 import { SiJavascript, SiTypescript, SiVisualstudio } from "react-icons/si";
 import { IoLogoVue } from "react-icons/io5";
+import AnimatedBg from "./AnimatedBg";
 
 const Skills = () => {
   return (
     <div className="skills" id="skills">
+      <AnimatedBg />
       <div className="container skills-container">
         <div className="technologies">
           <h2>Tecnologías</h2>
