@@ -5,11 +5,15 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
 
-  const [language, setLanguage] = useState("spanish");
+  const [language, setLanguage] = useState("es");
+
+  useEffect(() => {
+    setLanguage(navigator.language || navigator.userLanguage);
+  }, [])
 
   return (
     <div className="App">

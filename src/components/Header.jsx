@@ -21,7 +21,7 @@ const Header = ({ language, setLanguage }) => {
     },
   };
 
-  const text = language === "spanish" ? content.spanish : content.english;
+  const text = language === "es" ? content.spanish : content.english;
 
   const closeMenu = () => {
     setActive(false);

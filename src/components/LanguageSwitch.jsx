@@ -2,7 +2,7 @@ import "../stylesheets/languageSwitch.scss";
 
 const LanguageSwitch = ({ language, setLanguage }) => {
   const toggleLanguage = () => {
-    language === "spanish" ? setLanguage("english") : setLanguage("spanish");
+    language === "es" ? setLanguage("en") : setLanguage("es");
   };
 
   return (
