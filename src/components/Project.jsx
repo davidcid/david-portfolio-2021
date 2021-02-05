@@ -138,8 +138,10 @@ const Project = ({ project, language }) => {
               : selectedProject.description_en}
           </p>
           <ul className="legend-techs">
-            {selectedProject.technologies.map((tech) => (
-              <li className="legend-tech">{tech}</li>
+            {selectedProject.technologies.map((tech, i) => (
+              <li key={i} className="legend-tech">
+                {tech}
+              </li>
             ))}
           </ul>
         </div>
@@ -152,8 +154,8 @@ const Project = ({ project, language }) => {
           showThumbs={false}
           className="project-carousel"
         >
-          {selectedProject.images.map((image) => (
-            <div className="project-carousel-div">
+          {selectedProject.images.map((image, i) => (
+            <div key={i} className="project-carousel-div">
               <img src={image.image} alt={image.alt} />
             </div>
           ))}

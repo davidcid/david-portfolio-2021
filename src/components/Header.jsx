@@ -34,9 +34,9 @@ const Header = ({ language, setLanguage }) => {
   return (
     <header className="header">
       <div className={`menu-btn ${active ? "close" : ""}`} onClick={toggleMenu}>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
+        <div className="btn-line"></div>
       </div>
       <nav className={`nav ${active ? "active" : ""}`}>
         <ul className="menu">

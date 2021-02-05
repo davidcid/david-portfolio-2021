@@ -7,9 +7,9 @@ const LanguageSwitch = ({ language, setLanguage }) => {
 
   return (
     <div className="languageSwitch">
-      <label class="switch">
+      <label className="switch">
         <input type="checkbox" onChange={toggleLanguage}></input>
-        <span class="slider round"></span>
+        <span className="slider round"></span>
       </label>
     </div>
   );

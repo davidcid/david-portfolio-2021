@@ -2,8 +2,12 @@ import "../stylesheets/home.scss";
 import TypeIt from "typeit-react";
 import { FaEnvelope, FaTwitter, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import AnimatedBg from "./AnimatedBg";
+import { useEffect, useState } from "react";
 
 const Home = ({ language }) => {
+  const [instance, setInstance] = useState(null);
+  const [typingText, setTypingText] = useState(null);
+
   const content = {
     spanish: {
       hello: "¡Hola!",
@@ -19,28 +23,38 @@ const Home = ({ language }) => {
     },
   };
 
-  const text = language === "es" ? content.spanish : content.english;
+  let text = language === "es" ? content.spanish : content.english;
+
+  useEffect(() => {
+    instance && instance.reset();
+    setTypingText(
+      <TypeIt
+        options={{ speed: 140, deleteSpeed: 90 }}
+        getBeforeInit={(instance) => {
+          instance
+            .type(text.hello)
+            .pause(750)
+            .delete(6)
+            .pause(500)
+            .type(text.title)
+            .pause(750)
+            .type(".");
+          return instance;
+        }}
+        getAfterInit={(instance) => {
+          setInstance(instance);
+          return instance;
+        }}
+      ></TypeIt>
+    );
+    instance && instance.go();
+  }, [instance, text.hello, text.title]);
 
   return (
     <div className="home" id="home">
       <AnimatedBg />
       <div className="container home-container">
-        <h1 className="home-title">
-          <TypeIt
-            options={{ speed: 140, deleteSpeed: 90 }}
-            getBeforeInit={(instance) => {
-              instance
-                .type(text.hello)
-                .pause(750)
-                .delete(6)
-                .pause(500)
-                .type(text.title)
-                .pause(750)
-                .type(".");
-              return instance;
-            }}
-          ></TypeIt>
-        </h1>
+        <h1 className="home-title">{typingText}</h1>
         <p className="home-paragraph">{text.description}</p>
         <hr className="home-line" />
 
