@@ -1,19 +1,30 @@
 import "../stylesheets/projects.scss";
 import Project from "./Project";
 
-const Projects = () => {
-    return ( 
-        <div className="projects" id="projects">
-            <div className="container">
-                <h2 className="projects-title">Proyectos en los que he participado</h2>
-                <div className="projects-container">
-                    <Project project="amphosfarmacia"/>
-                    <Project project="careexpand"/>
-                    <Project project="sonospine"/>
-                </div>
-            </div>
+const Projects = ({ language }) => {
+  const content = {
+    spanish: {
+      title: "Proyectos en los que he participado",
+    },
+    english: {
+      title: "Projects I have participated",
+    },
+  };
+
+  const text = language === "spanish" ? content.spanish : content.english;
+
+  return (
+    <div className="projects" id="projects">
+      <div className="container">
+        <h2 className="projects-title">{text.title}</h2>
+        <div className="projects-container">
+          <Project project="amphosfarmacia" language={language} />
+          <Project project="careexpand" language={language} />
+          <Project project="sonospine" language={language} />
         </div>
-     );
-}
- 
+      </div>
+    </div>
+  );
+};
+
 export default Projects;

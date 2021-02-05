@@ -50,11 +50,12 @@
   .nav {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     background-color: $dark-color;
     min-height: 51px;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: -148px;
     transition: all 0.4s ease;

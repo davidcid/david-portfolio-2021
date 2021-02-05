@@ -30,8 +30,10 @@ const projects = [
   {
     name: "amphosfarmacia",
     title: "Amphosfarmacia",
-    description:
+    description_es:
       "Projecto que creé desde cero utilizando React.js en el front y Node.js para el backend. Utilizado por profesionales de la salud para compartir sus experiencias con el COVID-19 y comunicarse con otros profesionales.",
+    description_en:
+      "Project that I created from scratch using React.js on the front and Node.js for the backend. Used by healthcare professionals to share their experiences with COVID-19 and communicate with other professionals.",
     url: "https://www.amphosfarmacia.com",
     images: [
       {
@@ -56,8 +58,10 @@ const projects = [
   {
     name: "careexpand",
     title: "Careexpand",
-    description:
+    description_es:
       "Participé en el desarrollo de la aplicación de Careexpand orientada al registro de datos de pacientes y comunicación paciente/doctor. Entre otras tecnologías, utilicé Twilio para las video conferencias y Stripe para procesar los pagos.",
+    description_en:
+      "I participated in the development of the Careexpand application oriented to the registration of patient data and patient / doctor communication. Among other technologies, I used Twilio for video conferencing and Stripe to process payments.",
     url: "https://www.careexpand.com",
     images: [
       {
@@ -88,8 +92,10 @@ const projects = [
   {
     name: "sonospine",
     title: "Sonospine",
-    description:
+    description_es:
       "Colaboré en el mantenimiento de la parte privada de esta herramienta utilizada para hacer seguimiento a pacientes con afecciones de espalda.",
+    description_en:
+      "I collaborated in the maintenance of the private part of this tool used to follow up patients with back conditions.",
     url: "https://sonospinesurgery.com/",
     images: [
       {
@@ -109,7 +115,7 @@ const projects = [
   },
 ];
 
-const Project = ({ project }) => {
+const Project = ({ project, language }) => {
   const selectedProject = projects.filter((item) => item.name === project)[0];
 
   return (
@@ -126,7 +132,11 @@ const Project = ({ project }) => {
               {selectedProject.title} <BiLink />
             </a>
           </h3>
-          <p className="legend-text">{selectedProject.description}</p>
+          <p className="legend-text">
+            {language === "spanish"
+              ? selectedProject.description_es
+              : selectedProject.description_en}
+          </p>
           <ul className="legend-techs">
             {selectedProject.technologies.map((tech) => (
               <li className="legend-tech">{tech}</li>

@@ -1,9 +1,27 @@
 import "../stylesheets/header.scss";
 import { Link } from "react-scroll";
 import { useState } from "react";
+import LanguageSwitch from "./LanguageSwitch";
 
-const Header = () => {
+const Header = ({ language, setLanguage }) => {
   const [active, setActive] = useState(false);
+
+  const content = {
+    spanish: {
+      home: "Inicio",
+      about: "Sobre mí",
+      skills: "Skills",
+      projects: "Proyectos",
+    },
+    english: {
+      home: "Home",
+      about: "About",
+      skills: "Skills",
+      projects: "Projects",
+    },
+  };
+
+  const text = language === "spanish" ? content.spanish : content.english;
 
   const closeMenu = () => {
     setActive(false);
@@ -30,7 +48,7 @@ const Header = () => {
             smooth={true}
             onClick={closeMenu}
           >
-            Inicio
+            {text.home}
           </Link>
           <Link
             className="menu-item"
@@ -40,7 +58,7 @@ const Header = () => {
             smooth={true}
             onClick={closeMenu}
           >
-            Sobre mí
+            {text.about}
           </Link>
           <Link
             className="menu-item"
@@ -50,7 +68,7 @@ const Header = () => {
             smooth={true}
             onClick={closeMenu}
           >
-            Skills
+            {text.skills}
           </Link>
           <Link
             className="menu-item"
@@ -60,9 +78,10 @@ const Header = () => {
             smooth={true}
             onClick={closeMenu}
           >
-            Proyectos
+            {text.projects}
           </Link>
         </ul>
+        <LanguageSwitch language={language} setLanguage={setLanguage} />
       </nav>
     </header>
   );

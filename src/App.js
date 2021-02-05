@@ -5,16 +5,20 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import { useState } from 'react';
 
 function App() {
+
+  const [language, setLanguage] = useState("spanish");
+
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Projects />
-      <Footer />
+      <Header language={language} setLanguage={setLanguage}/>
+      <Home language={language} />
+      <About language={language} />
+      <Skills language={language} />
+      <Projects language={language} />
+      <Footer language={language} />
     </div>
   );
 }

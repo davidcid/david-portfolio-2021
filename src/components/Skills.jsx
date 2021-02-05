@@ -18,13 +18,26 @@ import { SiJavascript, SiTypescript, SiVisualstudio } from "react-icons/si";
 import { IoLogoVue } from "react-icons/io5";
 import AnimatedBg from "./AnimatedBg";
 
-const Skills = () => {
+const Skills = ({ language }) => {
+  const content = {
+    spanish: {
+      technologies: "Tecnologías",
+      tools: "Herramientas",
+    },
+    english: {
+      technologies: "Technologies",
+      tools: "Tools",
+    },
+  };
+
+  const text = language === "spanish" ? content.spanish : content.english;
+
   return (
     <div className="skills" id="skills">
       <AnimatedBg />
       <div className="container skills-container">
         <div className="technologies">
-          <h2>Tecnologías</h2>
+          <h2>{text.technologies}</h2>
           <ul className="skills-list">
             <li className="skills-element">
               <AiFillHtml5 />
@@ -69,7 +82,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className="tools">
-          <h2>Herramientas</h2>
+          <h2>{text.tools}</h2>
           <ul className="skills-list">
             <li className="skills-element">
               <FaGithub />
