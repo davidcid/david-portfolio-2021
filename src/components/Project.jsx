@@ -133,7 +133,7 @@ const Project = ({ project, language }) => {
             </a>
           </h3>
           <p className="legend-text">
-            {language === "es"
+            {language === "es" || language === "es-ES"
               ? selectedProject.description_es
               : selectedProject.description_en}
           </p>

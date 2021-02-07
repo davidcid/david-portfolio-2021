@@ -23,7 +23,7 @@ const Home = ({ language }) => {
     },
   };
 
-  let text = language === "es" ? content.spanish : content.english;
+  const text = language === "es" || "es-ES" ? content.spanish : content.english;
 
   useEffect(() => {
     instance && instance.reset();
