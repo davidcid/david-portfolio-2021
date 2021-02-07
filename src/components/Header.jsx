@@ -1,6 +1,6 @@
 import "../stylesheets/header.scss";
 import { Link } from "react-scroll";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LanguageSwitch from "./LanguageSwitch";
 
 const Header = ({ language, setLanguage }) => {
@@ -33,6 +33,10 @@ const Header = ({ language, setLanguage }) => {
   const toggleMenu = () => {
     active ? setActive(false) : setActive(true);
   };
+
+  useEffect(() => {
+    setActive(false);
+  }, [language]);
 
   return (
     <header className="header">
