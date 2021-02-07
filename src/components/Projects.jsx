@@ -11,7 +11,10 @@ const Projects = ({ language }) => {
     },
   };
 
-  const text = language === "es" || "es-ES" ? content.spanish : content.english;
+  const text =
+    language === "es" || language === "es-ES"
+      ? content.spanish
+      : content.english;
 
   return (
     <div className="projects" id="projects">
