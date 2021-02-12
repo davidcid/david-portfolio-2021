@@ -1,7 +1,11 @@
 @import "config";
 
 .skills {
-  background-color: $light-color;
+  background: linear-gradient(
+    to bottom,
+    hsla(105, 55%, 96%, 0.5),
+    hsla(182, 43%, 76%, 0.5)
+  );
   color: $dark-font;
   position: relative;
 

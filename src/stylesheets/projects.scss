@@ -1,7 +1,9 @@
 @import "config";
 
 .projects {
-  background-color: $dark-color;
+  background: linear-gradient(32deg, #1d3557, #457b9d);
+  box-shadow: 0px 0px 8px 4px #000000c9;
+
   color: $light-font;
 
   .container {

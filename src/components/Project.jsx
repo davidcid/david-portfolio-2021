@@ -20,6 +20,11 @@ import sonospineLanding from "../assets/images/sonospine/landing.jpg";
 import sonospineTreatment from "../assets/images/sonospine/treatment.jpg";
 import sonospineStories from "../assets/images/sonospine/stories.jpg";
 
+//imagenes strongboot
+import strongbootMenu from "../assets/images/strongboot/menu.jpg";
+import strongbootCart from "../assets/images/strongboot/cart.jpg";
+import strongbootPortrait from "../assets/images/strongboot/portrait.jpg";
+
 // iconos tecnologias
 import { FaReact, FaNodeJs, FaAngular } from "react-icons/fa";
 import { SiJavascript, SiMysql, SiTwilio, SiTypescript } from "react-icons/si";
@@ -112,6 +117,30 @@ const projects = [
       },
     ],
     technologies: [<FaAngular />, <SiTypescript />],
+  },
+  {
+    name: "strongboot",
+    title: "Strongboot",
+    description_es:
+      "Proyecto personal en que creé desde cero una tienda de moda y complementos online. Se adapta a cualquier tamaño de dispositivo e incluye la lógica de añadir productos al carrito para su posterior compra. Utilicé React y TypeScipt para el su desarrollo.",
+    description_en:
+      "I created this personal project from scratch reproducing an online fashion and accessories store. It adapts to any device size and includes the logic of adding products to the cart for later purchase. I used React and TypeScipt for its development.",
+    url: "https://david-react-shop.netlify.app/",
+    images: [
+      {
+        image: strongbootPortrait,
+        alt: "Strongboot portrait page",
+      },
+      {
+        image: strongbootCart,
+        alt: "Strongboot cart detail",
+      },
+      {
+        image: strongbootMenu,
+        alt: "Strongboot open menu",
+      },
+    ],
+    technologies: [<FaReact />, <SiTypescript />],
   },
 ];
 

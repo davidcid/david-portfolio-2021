@@ -79,7 +79,7 @@
         padding: 10px 20px;
         text-decoration: none;
         color: $light-font;
-        font-weight: 700;
+        font-size: 0.7rem;
         text-transform: uppercase;
         letter-spacing: 2px;
         cursor: pointer;
@@ -104,7 +104,7 @@
 
         .menu-item {
           &.active {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
           }
         }
       }
