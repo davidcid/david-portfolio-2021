@@ -25,6 +25,7 @@ const Projects = ({ language }) => {
           <Project project="careexpand" language={language} />
           <Project project="sonospine" language={language} />
           <Project project="strongboot" language={language} />
+          <Project project="fakeflix" language={language} />
         </div>
       </div>
     </div>
