@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import "../stylesheets/project.scss";
 
-import { BiLink } from "react-icons/bi";
+import { BsBoxArrowUpRight } from "react-icons/bs";
 
 import { Projects } from "../seed";
 
@@ -21,7 +21,7 @@ const Project = ({ project, language }) => {
               target="_blank"
               rel="noreferrer"
             >
-              {selectedProject.title} <BiLink />
+              {selectedProject.title} <BsBoxArrowUpRight />
             </a>
           </h3>
           <p className="legend-text">
