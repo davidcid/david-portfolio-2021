@@ -25,6 +25,13 @@
         .legend-link {
           color: white;
           text-decoration: none;
+          position: relative;
+
+          svg {
+            margin-left: 0.8em;
+            position: absolute;
+            height: 30px;
+          }
         }
       }
 
