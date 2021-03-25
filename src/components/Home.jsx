@@ -10,13 +10,13 @@ const Home = ({ language }) => {
       hello: "¡Hola!",
       title: "Soy David Cid",
       description:
-        "Y soy Desarrollador Frontend. Disfruto diseñando y construyendo webs donde la experiencia de usuario esté presente desde el primer momento. Me gusta aprender nuevas tecnologías, escribir artículos técnicos o simplemente jugar videojuegos en mi tiempo libre.",
+        "Y soy Desarrollador Frontend. Disfruto diseñando y construyendo webs donde la experiencia de usuario esté presente desde el primer momento. Me gusta aprender nuevas tecnologías, trabajar en proyectos personales o simplemente jugar videojuegos en mi tiempo libre.",
     },
     english: {
       hello: "Hello!",
       title: "I'm David Cid",
       description:
-        "And I'm a Frontend Developer. I enjoy designing and building websites where the user experience is present from the first moment. I like to learn new technologies, write technical articles, or just play video games in my free time.",
+        "And I'm a Frontend Developer. I enjoy designing and building websites where the user experience is present from the first moment. I like to learn new technologies, work on personal projects or just play video games in my free time.",
     },
   };
 
